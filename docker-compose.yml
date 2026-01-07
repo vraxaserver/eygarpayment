@@ -1,17 +1,14 @@
-version: '3.8'
-
 services:
-  # Payment Service
-  payment-service:
+  api:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: eygar-payment-service
+    container_name: eygarpayment
     ports:
       - "8002:8002"
     env_file:
       - .env
-    network_mode: "host"
+
     volumes:
       - ./app:/app/app
     restart: unless-stopped
