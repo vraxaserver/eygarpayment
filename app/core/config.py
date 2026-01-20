@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
     # CORS
-    ALLOWED_ORIGINS: str = "http://localhost:3000","http://127.0.0.1:3000","https://eygar.com"
+    ALLOWED_ORIGINS: str = "http://localhost:3000","http://127.0.0.1:3000","https://eygar.com", "https://dev.eygar.com"
 
     # Service
     SERVICE_NAME: str = "eygarpayment"
